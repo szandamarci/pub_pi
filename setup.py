@@ -20,10 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = pub.publisher_member_function:main',
-            'listener = pub.subscriber_member_function:main',
             'listener_joint_states = pub.subscriber_member_function_joint_states:main',
-            'talker_backup = pub.publisher_member_function_backup:main',
         ],
     },
 )
