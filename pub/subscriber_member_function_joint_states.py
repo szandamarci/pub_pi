@@ -31,7 +31,7 @@ class MinimalSubscriber(Node):
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
-        self.positions = {"A1":0,"A2":6075,"A3":4723,"A4":0,"A5":0,"A6":0,"On":1}
+        self.positions = {"A1":0,"A2":6073,"A3":4723,"A4":0,"A5":0,"A6":0,"On":1}
         self.last_sent_time=time.time()
         self.send_rate_hz=7.5
         self.ser = serial.Serial('/dev/ttyACM0', 115200, timeout=10)
